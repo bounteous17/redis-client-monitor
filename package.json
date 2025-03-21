@@ -1,0 +1,38 @@
+{
+  "name": "redis-client-monitor",
+  "version": "0.0.1",
+  "description": "A lightweight Node.js utility to monitor and test the stability of a Redis connection from the client side",
+  "main": "index.ts",
+  "bin": {
+    "redis-client-monitor": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bounteous17/redis-client-monitor.git"
+  },
+  "keywords": [
+    "node",
+    "redis",
+    "health",
+    "client",
+    "monitor"
+  ],
+  "author": "Àlex Serra",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/bounteous17/redis-client-monitor/issues"
+  },
+  "homepage": "https://github.com/bounteous17/redis-client-monitor#readme",
+  "dependencies": {
+    "ioredis": "^5.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "typescript": "^5.8.2"
+  }
+}
